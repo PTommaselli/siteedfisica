@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Marvel');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+*{
+    margin: 0 auto;
+    padding: 0;
+    /* width: 960px; */
+}
+
+li{
+    list-style: none;  
+}
+
+#campo_logo{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 140px;
+    height: 110px;
+    margin-left: 60px;
+    background: white;
+    z-index: 1;
+}
+
+#img_logo{
+    width: 140px;
+    height: 110px;
+}
+
+#cabecalho{
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background: #3E884E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.link_nav{
+    width: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    font-family: "Roboto:300", sans-serif;
+    font-size: 22px;
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+#link_nav_home{
+    margin-right: -12px;
+}
+
+/* ================================================ */
+#area_mod{
+    background: #2D2D2D;
+    height: 670px;
+    
+}
+
+#campo_mod{
+    position: relative;
+    top: 30px;
+}
+
+#titulo_mod{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+#barra_mod{
+    width: 200px;
+    height: 2px;
+    background: white;
+}
+
+.img_sports{
+    width: 160px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item_sport{
+    width: 160px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#lista_sports{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 550px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================================ */
+
+#area_sobre{
+    background-image: url("img_sobre.png");
+    height: 740px;
+    width: 100%;
+}
+
+#titulo_sobre{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+#barra_sobre{
+    width: 366px;
+    height: 2px;
+    background: white;
+}
+
+#campo_sobre{
+    position: relative;
+    top: 30px;
+}
+
+#campo_info{
+    position: relative;
+    top: 40px;
+    background: rgb(62, 136, 78, 0.5);
+    width: 100%;
+    
+}
+
+#titulo_sobre_evento{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+#barra_sobre_evento{
+    width: 230px;
+    height: 2px;
+    background: white;
+}
+
+#desc_evento{
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+#titulo_local_evento{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+#barra_local_evento{
+    width: 250px;
+    height: 2px;
+    background: white;
+}
+
+#mapa_evento{
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 10px; 
+    margin-left: 100px;
+}
+
+#desc_local{
+    text-align: justify;
+    position: relative;
+    left: 150px;
+    width: 40%;
+    bottom: 215px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+#campo_info_ajs{
+    position: relative;
+    top: 30px;
+    width: 960px;
+}
+
+/* =============================== */
+
+.pg_slide{
+    width: 960px;
+    height: 500px;
+}
+
+.container{
+    width: 960px;
+    height: 70px;
+    background: rgb(0,0,0, 0.5);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 420px;
+}
+
+.title_slide, .subtitle_slide{
+    margin-left: 30px;
+}
+
+.barra_slide{
+    width: 70%;
+    height: 2px;
+    background: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 30px;
+}
+
+#i1{
+    display: none;
+}
+#i2{
+    display: none;
+}
+#i3{
+    display: none;
+}
+
+/* ======================================= */
+
+#rodape{
+    width: 100%;
+    height: 110px;
+    background: rgb(12, 12, 12);
+    font-family: "Roboto", sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#reg_evento{
+    width: 440px;
+    height: 70px ;
+    display: flex;
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+}
+
+#img_rodape{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    bottom: 10px;
+}
+
+#copyright{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
