@@ -10,10 +10,22 @@
 </head>
 <body onload="entrar()">
         <header id="cabecalho">
+			<div id="menu_moble">
+				<button onclick="fnMenu()" id="menu_btn">
+					<img src="img/menu_icon.png" alt="" id="img_menu">
+					<h1 id="title_menu">JIIFS</h1>
+				</button>
+			</div>
 			<div id="campo_logo">
 				<img src="img/JIIfs.svg" alt="logo JIIFS" id="img_logo">
-			</div>
+			</div>			
+
 			<nav id="navegacao">
+					<div class="barra_nav" id="bd1"></div>
+					<div class="barra_nav" id="bd2"></div>
+					<div class="barra_nav" id="bd3"></div>
+					<div class="barra_nav" id="bd4"></div>
+
 				<a href="#area_home" id="link_nav_home" class="link_nav">
 					HOME
 				</a>
@@ -24,6 +36,9 @@
 					SOBRE
 				</a>
 			</nav>
+
+			<script src="js/btnMenu.js"></script>
+
 		</header>
 		
 		<section id="area_home">
@@ -105,8 +120,6 @@
 			</div>
 			<h5 id="copyright">© 2018 - COMISSÃO DE TI - IFMS/DOURADOS</h5>
 		</footer>
-
-		
 		
 </body>
 </html>

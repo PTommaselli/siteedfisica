@@ -101,7 +101,7 @@ li{
     flex-direction: row;
     flex-wrap: wrap;
     height: 550px;
-    width: 600px;
+    width: 40%;
     justify-content: center;
     align-items: center;
 }
@@ -273,4 +273,197 @@ li{
     text-align: center;
     position: relative;
     top: 20px;
+}
+
+#menu_moble{
+    display: none;
+}
+
+@media screen and (max-width: 960px){
+    *{
+        width: 100%;
+    }
+
+    #campo_logo{
+        display: none;
+    }
+
+    #menu_moble{
+        display: block;
+        width: 100%;
+    }
+
+
+    #menu_btn{
+        border: none;
+        background: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        
+    }
+
+    #navegacao{
+        position: absolute;
+        top: 70px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(41, 107, 56);
+        z-index: 2;
+        display: none;
+    }
+
+    .pg_slide{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container{
+        width: 100%;
+        position: absolute;
+        top: 170px;
+    }
+
+    .subtitle_slide{
+        display: none;
+    }
+
+    .img_sports{
+        width: 70px;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;   
+    }
+    
+    .item_sport{
+        width: 70px;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .lista_sports{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 550px;
+        width:  0%;
+    }
+
+    #campo_info_ajs{
+        position: relative;
+        top: 30px;
+        width: 100%;
+    }
+
+    #mapa_evento{
+        width: 70%;
+        height: 200px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-right: 0%;
+        margin-left: 15%;
+    }
+
+    #desc_local{
+        text-align: justify;
+        position: relative;
+        left: 0;
+        top: 20px;
+        width: 70%;
+        color: white;
+        font-family: "Roboto", sans-serif;
+    }
+
+    #campo_info{
+        position: relative;
+        top: 40px;
+        background: rgb(62, 136, 78, 0.5);
+        width: 100%;
+        
+    }
+    
+    #campo_info_ajs{
+        position: relative;
+        top: 30px;
+        width: 100%;
+        height: 800px;
+        justify-content: center;
+        align-items: center; 
+        
+    }
+
+    #area_sobre{
+        height: 1140px;
+        width: 100%;
+    }
+
+    #reg_evento{
+        width: 80%;
+    }
+
+    #barra_sobre{
+        width: 30%;
+    }
+
+    #campo_mod{
+        width: 100%;
+    }
+
+    .title_slide{
+        width: 80%;
+    }
+
+    #title_menu{
+        position: relative;
+        left: 130%;
+        top: -37px;
+        color: white;
+        font-size: 30px;
+
+    }
+
+    .link_nav{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+
+    }
+
+    #link_nav_home{
+        margin-right: 0;
+    }
+
+    .barra_nav{
+        border: rgb(0,0,0 , 0.5) 1px solid;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    #bd1{
+        top: 0px;
+    }
+
+    #bd2{
+        top: 35px;
+    }
+
+    #bd3{
+        top: 70px;
+    }
+
+    #bd4{
+        top: 106px;
+    }
+    
+    titulo_local_evento{
+        width: 100%
+    }
 }
