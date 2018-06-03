@@ -6,10 +6,12 @@
 		<link rel="shortcut icon" href="img/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="styles/main.css" />
-       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body onload="entrar()">
-        <header id="cabecalho">
+    <header id="cabecalho">
 			<div id="menu_moble">
 				<button onclick="fnMenu()" id="menu_btn">
 					<img src="img/menu_icon.png" alt="" id="img_menu">
@@ -18,7 +20,7 @@
 			</div>
 			<div id="campo_logo">
 				<img src="img/JIIfs.svg" alt="logo JIIFS" id="img_logo">
-			</div>			
+			</div>
 
 			<nav id="navegacao">
 					<div class="barra_nav" id="bd1"></div>
@@ -35,12 +37,15 @@
 				<a href="#area_sobre" id="link_nav_sobre" class="link_nav">
 					SOBRE
 				</a>
+        <a href="/noticias" id="link_nav_noticias" class="link_nav">
+          NOTÍCIAS
+        </a>
 			</nav>
 
 			<script src="js/btnMenu.js"></script>
 
 		</header>
-		
+
 		<section id="area_home">
 			<div id="i1" class="pg_slide">
 				<div class="container">
@@ -59,7 +64,7 @@
 					</div>
 					<a class="link_img_slide" href=""><img class="img_slide" src="img_slide/img_2.jpg" alt=""></a>
 			</div>
-		
+
 			<div id="i3" class="pg_slide">
 					<div class="container">
 							<h2 class="title_slide">Primeiro Triatlon de Programação</h2>
@@ -72,23 +77,102 @@
 			<script type="text/javascript" src="js/slide_menu.js"></script>
 		</section>
 
+    <section id="noticias-evento">
+      <!-- REFERENCES: w3schools -->
+        <div class="tab">
+          <button class="tablink" onclick="openTab('noticias', this, 'var(--vermelho-logo)')" id="defaultOpen" >Notícias</button>
+          <button class="tablink" onclick="openTab('boletim', this, 'var(--verde-logo)')" >Boletim</button>
+          <button class="tablink" onclick="openTab('cronograma', this, 'var(--amarelo-logo)')">Cronograma</button>
+        </div>
+        <!-- INFORMAÇÕES  -->
+        <div id="noticias" class="tabcontent">
+          <h1 class="title-tabs">Últimas Notícias</h1>
+          <div class="content-cards">
+            <div class="card card-01">
+              <h2 id="titulo-noticias">EXEMPLO 01</h2>
+              <p class="date-noticia"><i class="large material-icons">date_range</i>xx/xx/xxxx</p>
+                <img src="https://i.ytimg.com/vi/403YQpHfRIk/maxresdefault.jpg"></img>
+                <div class="content-info">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div> <!--fim-card-->
+            <div class="card card-02">
+              <h2 id="titulo-noticias">EXEMPLO 02</h2>
+              <p class="date-noticia"><i class="large material-icons">date_range</i>xx/xx/xxxx</p>
+              <img src="https://i.ytimg.com/vi/403YQpHfRIk/maxresdefault.jpg"></img>
+                <div class="content-info">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div> <!--fim-card-->
+            <div class="card card-03">
+              <h2 id="titulo-noticias">EXEMPLO 03</h2>
+              <p class="date-noticia"><i class="large material-icons">date_range</i>xx/xx/xxxx</p>
+              <img src="https://i.ytimg.com/vi/403YQpHfRIk/maxresdefault.jpg"></img>
+                <div class="content-info">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div> <!--fim-card-->
+          </div><!--fim-contentCARD-->
+          <a class="btn-noticias"href="#">Ver Todas Noticias</a>
+        </div><!--fim-tabsContants-noticias-->
+
+        <div id="boletim" class="tabcontent">
+          <h1 class="title-tabs">Boletim</h1>
+          <div class="info-boletim">
+            <a href="#" download><i class="material-icons">attachment</i>Boletim 01<i class="large material-icons">file_download</i></a>
+            <a href="#"><i class="material-icons">attachment</i>Boletim 02<i class="large material-icons">file_download</i></a>
+            <a href="#"><i class="material-icons">attachment</i>Boletim 03<i class="large material-icons">file_download</i></a>
+            <a href="#"><i class="material-icons">attachment</i>Boletim 04<i class="large material-icons">file_download</i></a>
+          </div>
+        </div><!--fim-tabs-tabsContants-boletim-->
+
+        <div id="cronograma" class="tabcontent">
+          <h1 class="title-tabs title-cronograma">Cronograma</h1>
+          <div class="content-cronograma">
+            <div class="column1">
+              <div class="date01">
+                <h1>12 Junho</h1>
+                  <p>Lorem ipsum dolor sit ame.</p>
+                <h1>13 Junho</h1>
+                  <p>Lorem ipsum dolor sit ame.</p>
+                <h1>14 Junho</h1>
+                  <p>Lorem ipsum dolor sit ame.</p>
+                <h1>15 Junho</h1>
+                  <p>Lorem ipsum dolor sit ame.</p>
+              </div>
+            </div>
+            <div class="column2">
+              <div class="date01">
+                <h1>16 Junho</h1>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                <h1>17 Junho</h1>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                <h1>18 Junho</h1>
+                  <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--fim-tabs-tabsContants-crograma-->
+    </section>
+    <script src="js/tabs.js" ></script>
+
 		<section id="area_mod">
 
 			<div id="campo_mod">
 				<h1 id="titulo_mod">MODALIDADES</h1>
 				<div id="barra_mod"></div>
 				<ul id="lista_sports">
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/andebol.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/bandeirinha.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/basquetebol.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/cabo_de_guerra.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/fliperama.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/futsal.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/gincana_de_matematica.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/tenis_de_mesa.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/triatlon_de_programacao.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/voleibol.png" alt="" class="img_sports"></a></li>
-					<li class="item_sport"><a href="" class="link_sport"><img src="img_sports/xadrez.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/andebol.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/bandeirinha.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/basquetebol.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/cabo_de_guerra.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/fliperama.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/futsal.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/gincana_de_matematica.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/tenis_de_mesa.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/triatlon_de_programacao.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/voleibol.png" alt="" class="img_sports"></a></li>
+					<li class="item_sport"><a  class="link_sport"><img src="img_sports/xadrez.png" alt="" class="img_sports"></a></li>
 				</ul>
 			</div>
 
@@ -98,7 +182,7 @@
 			<div id="campo_sobre">
 				<h1 id="titulo_sobre">INFORMAÇÕES DO EVENTO</h1>
 				<div id="barra_sobre"></div>
-					
+
 				<div id="campo_info">
 					<div id="campo_info_ajs">
 						<h2 id="titulo_sobre_evento">SOBRE O EVENTO</h2>
@@ -113,13 +197,30 @@
 			</div>
 		</section>
 
-		<footer id="rodape">
-			<div id="reg_evento">
-				<img id="img_rodape" src="img/JIIfs.svg" alt="">
-				<p>JIIF - Jogos Interno do IFMS</p>
-			</div>
-			<h5 id="copyright">© 2018 - COMISSÃO DE TI - IFMS/DOURADOS</h5>
-		</footer>
-		
+    <footer id="rodape">
+      <div class="container-footer">
+        <a href="https://www.facebook.com/jiifms/" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <div class="logo-footer">
+          <img src="img/JIIfs.svg" alt="logo">
+          <p>JIIF - Jogos Interno do IFMS </p>
+        </div>
+        <a class="acesso-restrito" href="//acessar">Acesso restrito</a>
+      </div>
+      <div class="copyright">
+        <h1>&copy 2018 - COMISSÃO DE TI</h1>
+        <p>MEMBROS</p>
+          <div class="membros">
+            <ul>
+              <li>Nycolas Silva Fróes</li>
+              <li>Marcos Lopes Gonçalves</li>
+              <li>Pedro Garcia Tommaselli Chuba Machado</li>
+              <li>Raysa Caroline Estigarribia de Lima</li>
+              <li>João Marcos Coelho Castro Troquez</li>
+            </ul>
+          </div>
+      </div>
+    </footer>
+
 </body>
 </html>
